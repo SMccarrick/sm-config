@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "jsx": "react",
     "module": "CommonJS",
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "Node",
@@ -15,7 +17,12 @@
     "esModuleInterop": true,
     "declaration": true,
     "allowJs": false,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "isolatedModules": false,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "target": "es5"
   },
   "exclude": ["node_modules"]
 }
