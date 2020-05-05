@@ -19,7 +19,6 @@ module.exports = {
     jest: true,
   },
   plugins: ["@typescript-eslint", "react", "react-hooks", "prettier"],
-
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -31,22 +30,7 @@ module.exports = {
   rules: {
     "react/prop-types": "off", // Disable prop-types as we use TypeScript for type checking
     "@typescript-eslint/explicit-function-return-type": "off",
-    strict: ["error", "global"],
-    "prettier/prettier": [
-      "error",
-      {
-        arrowParens: "avoid",
-        bracketSpacing: true,
-        jsxSingleQuote: false,
-        printWidth: 120,
-        semi: true,
-        singleQuote: false,
-        tabWidth: 2,
-        trailingComma: "es5",
-        useTabs: false,
-        quoteProps: "consistent",
-      },
-    ],
+    "strict": ["error", "global"],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
   },
