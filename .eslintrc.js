@@ -1,5 +1,5 @@
 module.exports = {
-  parser: "@typescript-eslint/parser", // Specifies the ESLint parser
+  parser: "@typescript-eslint/parser",
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -24,14 +24,20 @@ module.exports = {
       jsx: true,
       modules: true,
     },
-    ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
-    sourceType: "module", // Allows for the use of imports
+    ecmaVersion: 2020,
+    sourceType: "module",
   },
   rules: {
-    "react/prop-types": "off", // Disable prop-types as we use TypeScript for type checking
-    "@typescript-eslint/explicit-function-return-type": "off",
+    /**
+     * 0 = disable
+     * 1 = warning
+     * 2 = error
+     **/
+    "@typescript-eslint/no-var-requires": 0,
+    "react/prop-types": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
     "strict": ["error", "global"],
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": 2,
+    "react-hooks/exhaustive-deps": 1,
   },
 };
