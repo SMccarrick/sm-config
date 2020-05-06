@@ -3,9 +3,9 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-    "prettier/@typescript-eslint",
+    "prettier",
   ],
   settings: {
     react: {
@@ -18,7 +18,7 @@ module.exports = {
     es6: true,
     jest: true,
   },
-  plugins: ["@typescript-eslint", "react", "react-hooks", "prettier"],
+  plugins: ["@typescript-eslint", "react", "react-hooks"],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
