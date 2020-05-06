@@ -2,9 +2,9 @@
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
     "jsx": "react",
-    "module": "CommonJS",
+    "module": "commonJS",
     "allowSyntheticDefaultImports": true,
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
@@ -22,7 +22,8 @@
     "isolatedModules": false,
     "noEmit": true,
     "resolveJsonModule": true,
-    "target": "es5"
+    "target": "es5",
+    "sourceMap": true,
   },
   "exclude": ["node_modules"]
 }
