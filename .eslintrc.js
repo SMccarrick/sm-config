@@ -5,6 +5,7 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
     "prettier",
   ],
   settings: {
@@ -18,7 +19,7 @@ module.exports = {
     es6: true,
     jest: true,
   },
-  plugins: ["@typescript-eslint", "react", "react-hooks"],
+  plugins: ["@typescript-eslint", "react", "react-hooks", "jsx-a11y"],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
