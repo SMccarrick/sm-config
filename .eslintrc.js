@@ -23,7 +23,7 @@ module.exports = {
     es6: true,
     jest: true,
   },
-  plugins: ["react", "prettier"],
+  plugins: ["@typescript-eslint", "react", "react-hooks", "jsx-a11y", "prettier"],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
