@@ -9,7 +9,6 @@ module.exports = {
     "plugin:testing-library/recommended",
     "plugin:jest-dom/recommended",
     "plugin:jsx-a11y/recommended",
-    "plugin:react-hooks/recommended",
     "prettier",
   ],
   settings: {
