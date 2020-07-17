@@ -1,5 +1,5 @@
 {
-  "name": "sm-config",
+  "name": "@smccarrick/sm-config",
   "version": "1.0.0",
   "description": "my configuration for eslint, typescript and prettier",
   "main": "index.js",
