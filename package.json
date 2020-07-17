@@ -1,6 +1,6 @@
 {
   "name": "@smccarrick/sm-config",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "my configuration for eslint, typescript and prettier",
   "main": "index.js",
   "repository": "git@github.com:SMccarrick/sm-config.git",
