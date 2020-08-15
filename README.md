@@ -10,7 +10,7 @@
 
 > my configuration for eslint, typescript and prettier.
 
-## Installation for non react typescript projects
+## Installation for non React typescript projects
 
 ```sh
 npx install-peerdeps @smccarrick/sm-config -D
@@ -55,6 +55,7 @@ module.exports = {
 ```sh
 {
   "extends": "@smccarrick/sm-config/tsconfig.json",
+}
 ```
 
 
