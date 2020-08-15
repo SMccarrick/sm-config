@@ -53,7 +53,6 @@ module.exports = {
 - create an `tsconfig.json` to extend our config
 
 ```sh
-
 {
   "extends": "@smccarrick/sm-config/tsconfig.json",
 ```
