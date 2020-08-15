@@ -30,6 +30,37 @@ Then install the required dependencies for the React eslint config
 yarn add eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-testing-library -D
 ```
 
+## Eslint
+
+- create an `.eslintrc.js` to extend our config
+
+React
+```sh
+module.exports = {
+  extends: ["@smccarrick/sm-config/eslint-config-react"]
+}
+```
+
+Non React
+```sh
+module.exports = {
+  extends: ["@smccarrick/sm-config/eslint-config"]
+}
+```
+
+## tsconfig
+
+- create an `tsconfig.json` to extend our config
+
+```sh
+
+{
+  "extends": "@smccarrick/sm-config/tsconfig.json",
+```
+
+
+Prettier comes integrated with eslint so no need to extend this config unless you want to use prettier separately to format other files such as `.yml`, `markdown ect`.
+
 ## Author
 
 👤 **Stephen Mccarrick <smccarrick2804@gmail.com>**
