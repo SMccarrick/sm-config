@@ -27,7 +27,7 @@ yarn add @smccarrick/sm-config -D
 Then install the required dependencies for the React eslint config
 
 ```sh
-yarn add eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-testing-library -D
+yarn add eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-testing-library -D
 ```
 
 ## Eslint
