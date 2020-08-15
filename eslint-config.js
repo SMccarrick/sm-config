@@ -2,30 +2,20 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   extends: [
     "eslint:recommended",
-    "plugin:react/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:import/typescript",
-    "plugin:testing-library/recommended",
-    "plugin:jest-dom/recommended",
-    "plugin:jsx-a11y/recommended",
     "prettier",
   ],
-  settings: {
-    react: {
-      version: "detect",
-    },
-  },
   env: {
     browser: true,
     node: true,
     es6: true,
     jest: true,
   },
-  plugins: ["@typescript-eslint", "react", "react-hooks", "jsx-a11y", "prettier"],
+  plugins: ["@typescript-eslint", "prettier"],
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
       modules: true,
     },
     ecmaVersion: 2020,
@@ -39,10 +29,7 @@ module.exports = {
      **/
     "prettier/prettier": [2, require("./prettier.config")],
     "@typescript-eslint/no-var-requires": 0,
-    "react/prop-types": 0,
     "@typescript-eslint/explicit-function-return-type": 0,
     "strict": ["error", "global"],
-    "react-hooks/rules-of-hooks": 2,
-    "react-hooks/exhaustive-deps": 1,
   },
 };

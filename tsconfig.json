@@ -22,7 +22,7 @@
     "isolatedModules": false,
     "noEmit": true,
     "resolveJsonModule": true,
-    "target": "es5",
+    "target": "esnext",
     "sourceMap": true,
   },
   "exclude": ["node_modules"]
