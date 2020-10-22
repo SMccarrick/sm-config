@@ -28,6 +28,7 @@ module.exports = {
      * 2 = error
      **/
     "react/prop-types": 0,
+    "react/no-unescaped-entities": 0,
     "react-hooks/rules-of-hooks": 2,
     "react-hooks/exhaustive-deps": 1,
   },
