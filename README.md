@@ -18,21 +18,35 @@ npx install-peerdeps @smccarrick/sm-config -D
 
 ## Eslint
 
-create an `.eslintrc.js` to extend our config
+create an `.eslintrc.js` with the config below
 
 ```sh
 module.exports = {
-  extends: ["@smccarrick/sm-config/.eslintrc"]
+  extends: ["@smccarrick/sm-config/.eslintrc.js"]
+    parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: ["./tsconfig.json", "./tsconfig.eslint.json"],
+  },
 }
 ```
 
 ## tsconfig
 
-- create an `tsconfig.json` to extend our config
+create an `tsconfig.eslint.json` with the below config
 
 ```sh
 {
   "extends": "@smccarrick/sm-config/tsconfig.json",
+  "include": [".eslintrc.js"]
+}
+```
+
+create an `tsconfig.json` to extend our config
+
+```sh
+{
+  "extends": "@smccarrick/sm-config/tsconfig.json",
+  "include": ["**/*"],
 }
 ```
 
