@@ -1,8 +1,7 @@
 {
   "name": "@smccarrick/sm-config",
   "version": "2.1.1",
-  "description": "my configuration for eslint, typescript and prettier",
-  "main": "index.js",
+  "description": "Configuration for eslint, typescript and prettier for React",
   "repository": "git@github.com:SMccarrick/sm-config.git",
   "author": "Stephen Mccarrick <smccarrick2804@gmail.com>",
   "license": "MIT",
@@ -15,21 +14,20 @@
     "prettier"
   ],
   "peerDependencies": {
-    "@types/node": "^14.14.2",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^4.5.0",
-    "eslint": "^7.11.0",
+    "eslint": "^7.17.0",
     "eslint-config-prettier": "^6.14.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.1.2",
-    "typescript": "^4.0.3"
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
   },
   "devDependencies": {
-    "@types/node": "^14.14.2",
+    "@types/node": "^14.14.20",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^4.5.0",
-    "eslint": "^7.11.0",
+    "eslint": "^7.17.0",
     "eslint-config-prettier": "^6.14.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest-dom": "^3.2.3",
@@ -38,8 +36,8 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-testing-library": "^3.9.2",
-    "prettier": "^2.1.2",
-    "typescript": "^4.0.3"
+    "prettier": "^2.2.1",
+    "typescript": "^4.0.5"
   },
   "scripts": {
     "lint": "eslint .",
