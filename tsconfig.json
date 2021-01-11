@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
     "jsx": "react",
-    "module": "commonJS",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowSyntheticDefaultImports": true,
+    "module": "es2020",
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": true,
@@ -24,6 +24,9 @@
     "resolveJsonModule": true,
     "target": "esnext",
     "sourceMap": true,
+		"noFallthroughCasesInSwitch": true,
   },
-  "exclude": ["node_modules"]
+  "compileOnSave": false,
+  "include": [ "**/*"],
+  "exclude": ["./node_modules"]
 }

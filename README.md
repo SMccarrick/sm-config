@@ -8,56 +8,47 @@
   </a>
 </p>
 
-> my configuration for eslint, typescript and prettier.
+> Configuration for eslint, typescript and prettier for react.
 
-## Installation for non React typescript projects
+## Installation
 
 ```sh
 npx install-peerdeps @smccarrick/sm-config -D
 ```
 
-You can use the `eslint-config.js` for standard typescript projects.
-
-## Installation for React projects
-
-```sh
-yarn add @smccarrick/sm-config -D
-```
-
-Then install the required dependencies for the React eslint config
-
-```sh
-yarn add eslint-plugin-jest-dom eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-testing-library -D
-```
-
 ## Eslint
 
-- create an `.eslintrc.js` to extend our config
+create an `.eslintrc.js` with the config below
 
-React
 ```sh
 module.exports = {
-  extends: ["@smccarrick/sm-config/eslint-config-react"]
-}
-```
-
-Non React
-```sh
-module.exports = {
-  extends: ["@smccarrick/sm-config/eslint-config"]
+  extends: ["@smccarrick/sm-config/.eslintrc.js"]
+    parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: ["./tsconfig.json", "./tsconfig.eslint.json"],
+  },
 }
 ```
 
 ## tsconfig
 
-- create an `tsconfig.json` to extend our config
+create an `tsconfig.eslint.json` with the below config
 
 ```sh
 {
   "extends": "@smccarrick/sm-config/tsconfig.json",
+  "include": [".eslintrc.js"]
 }
 ```
 
+create an `tsconfig.json` to extend our config
+
+```sh
+{
+  "extends": "@smccarrick/sm-config/tsconfig.json",
+  "include": ["**/*"],
+}
+```
 
 Prettier comes integrated with eslint so no need to extend this config unless you want to use prettier separately to format other files such as `.yml`, `markdown ect`.
 
@@ -65,8 +56,8 @@ Prettier comes integrated with eslint so no need to extend this config unless yo
 
 👤 **Stephen Mccarrick <smccarrick2804@gmail.com>**
 
-* Github: [@SMccarrick](https://github.com/SMccarrick)
-* LinkedIn: [@stephen-mccarrick](https://linkedin.com/in/stephen-mccarrick)
+- Github: [@SMccarrick](https://github.com/SMccarrick)
+- LinkedIn: [@stephen-mccarrick](https://linkedin.com/in/stephen-mccarrick)
 
 ## 🤝 Contributing
 
