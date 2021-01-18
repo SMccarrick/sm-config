@@ -22,8 +22,8 @@ create an `.eslintrc.js` with the config below
 
 ```sh
 module.exports = {
-  extends: ["@smccarrick/sm-config/.eslintrc.js"]
-    parserOptions: {
+  extends: ["./node_modules/@smccarrick/sm-config/.eslintrc.js"],
+  parserOptions: {
     tsconfigRootDir: __dirname,
     project: ["./tsconfig.json", "./tsconfig.eslint.json"],
   },

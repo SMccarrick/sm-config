@@ -38,7 +38,7 @@ module.exports = {
     jest: true,
   },
   rules: {
-    "prettier/prettier": ["error", require("./prettier.config.ts")],
+    "prettier/prettier": ["error", require("./prettier.config.js")],
     "sort-imports": "off",
     "react/prop-types": "off",
     "@typescript-eslint/no-var-requires": "off",
