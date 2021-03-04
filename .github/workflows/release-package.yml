@@ -1,4 +1,4 @@
-name: sm-config package
+name: Node.js Package
 
 on:
   release:
