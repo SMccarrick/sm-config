@@ -10,6 +10,8 @@ module.exports = {
     project: ["./tsconfig.json", "./tsconfig.eslint.json"],
   },
   plugins: [
+    "jest-dom",
+    "testing-library",
     "@typescript-eslint",
     "import",
     "react",
@@ -21,8 +23,7 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:import/errors",
-    "plugin:import/warnings",
+    "plugin:import/recommended",
     "plugin:import/typescript",
     "plugin:testing-library/dom",
     "plugin:jest-dom/recommended",
@@ -45,7 +46,17 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": "off",
     "import/order": [
       "error",
-      { "newlines-between": "always", alphabetize: { order: "asc" } },
+      {
+        "newlines-between": "always",
+        groups: [
+          "external",
+          "builtin",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+        ],
+      },
     ],
     strict: ["error", "global"],
   },
