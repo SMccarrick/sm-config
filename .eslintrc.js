@@ -24,7 +24,7 @@ module.exports = {
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
-    "plugin:testing-library/recommended",
+    "plugin:testing-library/dom",
     "plugin:jest-dom/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:react/recommended",
